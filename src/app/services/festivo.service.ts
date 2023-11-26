@@ -15,14 +15,6 @@ export class FestivoService {
   }
 
   public verifyHoliday(date: Date): Observable<string> {
-    console.log(
-      date +
-        ' en servicio' +
-        date.getDay() +
-        date.getMonth() +
-        date.getFullYear()
-    );
-
     const day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();

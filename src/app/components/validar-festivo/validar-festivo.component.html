@@ -18,8 +18,8 @@
   <section>
     <mat-form-field class="example-full-width">
       <mat-label>Año</mat-label>
-      <input matInput type="number">
+      <input matInput type="number" name="enteredYear" [(ngModel)]="enteredYear">
     </mat-form-field>
-    <button mat-raised-button color="primary">Obtener Festivos</button>
+    <button mat-raised-button color="primary" (click)="getFestivos()">Obtener Festivos</button>
   </section>
 </form>
