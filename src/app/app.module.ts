@@ -8,6 +8,7 @@ import { ValidarFestivoComponent } from './components/validar-festivo/validar-fe
 import { ReferenciasMaterialModule } from './modules/referencias-material.module';
 import { FestivoService } from './services/festivo.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [AppComponent, ValidarFestivoComponent],
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReferenciasMaterialModule,
     FormsModule,
     HttpClientModule,
+    NgxDatatableModule,
   ],
   providers: [FestivoService],
   bootstrap: [AppComponent],

@@ -21,5 +21,12 @@
       <input matInput type="number" name="enteredYear" [(ngModel)]="enteredYear">
     </mat-form-field>
     <button mat-raised-button color="primary" (click)="getFestivos()">Obtener Festivos</button>
+
+    <ngx-datatable class="dark" [headerHeight]="50" [footerHeight]="50" [rowHeight]="20" [rows]="festivos"
+      [columns]="columns" [columnMode]="columnMode.force" [limit]="10" [selectionType]="selecionType.single"
+      (activate)="handleRowActivation($event)" [rowHeight]="'auto'">
+
+
+    </ngx-datatable>
   </section>
 </form>
